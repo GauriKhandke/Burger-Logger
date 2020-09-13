@@ -1,4 +1,5 @@
--- write insert queries to populate the `burgers` table with at least three entries.
+-- insert queries to populate the `burgers` table with three entries.
+
 -- Run the `schema.sql` and `seeds.sql` files into the mysql server from the command line
 
 --   * Make sure you're in the `db` folder of your app.

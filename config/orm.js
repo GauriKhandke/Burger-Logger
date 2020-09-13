@@ -4,9 +4,7 @@ var connection = require("../config/connection");
 // In the orm.js file, create the methods that will execute the necessary MySQL commands in the controllers. 
 // These are the methods you will need to use in order to retrieve and store data in your database.
 
-// selectAll()
-// insertOne()
-// updateOne()
+// selectAll(), insertOne() ,updateOne()
 // Export the ORM object in module.exports.
 
 
@@ -24,9 +22,11 @@ function printQuestionMarks(num) {
     return arr.toString();
 }
 
+
 // Object for all SQL statement functions.
 var orm = {
 
+    // Function to execute 'SELECT' query
     selectAll : function(tableName, cb){
         
         let queryString = `SELECT * FROM ${tableName};`;
@@ -37,6 +37,7 @@ var orm = {
         });
     },
 
+    // Function to execute 'Insert' Query : cols and vals are array
     insertOne : function(table, cols, vals, cb){
 
         let queryString = `INSERT INTO ${table} 
@@ -44,7 +45,7 @@ var orm = {
         VALUES (${printQuestionMarks(vals.length)});   
         `;
 
-        console.log(`insertOne Query : ${queryString}`);
+        // console.log(`insertOne Query : ${queryString}`);
 
         connection.query(queryString, vals, function(err, result){
 
@@ -55,6 +56,7 @@ var orm = {
 
     },
 
+    // Function to execute 'update' query
     updateOne : function(table, vals, condition, cb){
 
         let queryString = `
@@ -64,7 +66,8 @@ var orm = {
         ${condition};
         `;
 
-        console.log(`UpdateOne Query : ${queryString}`);
+        // console.log("value : "+JSON.stringify(vals));
+        // console.log(`UpdateOne Query : ${queryString}`);
 
         connection.query(queryString, [vals], function(err, result){
 

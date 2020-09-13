@@ -4,6 +4,7 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 
+// Create connection
 let connection = mysql.createConnection({
   host: "localhost",
   port: 3306,

@@ -5,9 +5,13 @@ $(function(){
 
         event.preventDefault();
 
+        let burgerName = $("#burgerName").val().trim();
+        if (burgerName === "") {
+            return;
+        }
         // Create object of burger values from user
         let newBurger = {
-            name : $("#burgerName").val().trim(),
+            name : burgerName,
             devoured : false
         };
 

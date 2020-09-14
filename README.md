@@ -16,6 +16,10 @@ Create a burger logger: Eat-Da-Burger restaurant app with MySQL, Node, Express, 
 # Deployed Website: 
 [Burger Logger](https://eat-da-burger-restaurant.herokuapp.com/)
 
+# Screenshot :
+
+![Burger Logger](public/assets/images/Burger-Logger.png)
+
 # Technology :
 
 **1. [MySQL](https://www.npmjs.com/package/mysql)** : 

@@ -1,9 +1,12 @@
-# Burger-Logger
+# Burger Logger
 ![MIT License](https://img.shields.io/badge/license-MIT-green)
 
-# Goal :
+# Description :
 
-Create a burger logger: Eat-Da-Burger restaurant app with MySQL, Node, Express, Handlebars and ORM.
+Eat-Da-Burger restaurant app where the users input the names of burgers and has Devour button. When the user clicks it, the burger will be 'Devoured'. This full stack application created with MySQL, Node, Express, Handlebars and ORM.
+
+## Deployed Website: 
+[Burger Logger](https://eat-da-burger-restaurant.herokuapp.com/)
 
 # Table of Contents
 
@@ -13,12 +16,11 @@ Create a burger logger: Eat-Da-Burger restaurant app with MySQL, Node, Express, 
 * [License](#license)
 * [Questions](#questions)
 
-# Deployed Website: 
-[Burger Logger](https://eat-da-burger-restaurant.herokuapp.com/)
+# Demo :
+![Burger Logger](public/assets/images/BurgerLogger.gif)
 
 # Screenshot :
-
-![Burger Logger](public/assets/images/Burger-Logger.png)
+![Burger Logger](public/assets/images/BurgerLogger.png)
 
 # Technology :
 
